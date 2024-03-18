@@ -1,0 +1,21 @@
+package org.javarevised.moviecatelogservice;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.client.RestTemplate;
+
+@SpringBootApplication
+public class MovieCatelogServiceApplication {
+
+
+	public static void main(String[] args) {
+		SpringApplication.run(MovieCatelogServiceApplication.class, args);
+	}
+
+	@Bean
+	RestTemplate restTemplate(){
+		return new RestTemplate();
+	}
+
+}
